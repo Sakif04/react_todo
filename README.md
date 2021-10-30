@@ -7,7 +7,7 @@
 - _Edit items of the list_
 - _Filter items by completed and uncompleted tasks_
 
-[Preview Link]()
+[Preview Link](https://sakifstodolist.netlify.app/)
 
 ![Todo-List screenshot](https://github.com/Sakif04/react_todo/blob/main/public/todolist.PNG)
 
