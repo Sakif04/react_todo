@@ -9,7 +9,7 @@
 
 [Preview Link]()
 
-![Todo-List screenshot](./public/todolist.png)
+![Todo-List screenshot](https://github.com/Sakif04/react_todo/blob/main/public/todolist.png)
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
