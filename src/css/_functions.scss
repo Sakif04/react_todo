@@ -1,0 +1,29 @@
+@mixin device($screenWidth, $font-size) {
+    @media (max-width: $screenWidth) {
+        html {
+            font-size: $font-size;
+        }
+        #tasklist {
+            max-height: 80%;
+        }
+        #todo-header {
+            height: 2rem;
+            width: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("../images/Landscape-Color.jpg");
+            background-position: center;
+        }
+        #todo-list{
+            .item{  
+                justify-content: left;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 90%;
+               
+            }
+        }
+    }
+}
+
+@include device(800px, 10px);
