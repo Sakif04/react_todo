@@ -1,4 +1,8 @@
 # React To Do List
+## To Do list made with ReactJS 
+- _used Hooks to manage state_
+- _Only React is used to create the project_
+- _Testing is not included in the project
 
 #### _Features_:
 
