@@ -2,7 +2,8 @@
 ## To Do list made with ReactJS 
 - _used Hooks to manage state_
 - _Only React is used to create the project_
-- _Testing is not included in the project
+- _Testing is not included in the project_
+
 
 #### _Features_:
 
@@ -16,6 +17,9 @@
 ![Todo-List screenshot](https://github.com/Sakif04/react_todo/blob/main/public/todolist.PNG)
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
 
 ### Available Scripts
 
