@@ -1,29 +1,57 @@
 @mixin device($screenWidth, $font-size) {
-    @media (max-width: $screenWidth) {
-        html {
-            font-size: $font-size;
-        }
-        #tasklist {
-            max-height: 80%;
-        }
-        #todo-header {
-            height: 2rem;
-            width: 100%;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-image: url("../images/Landscape-Color.jpg");
-            background-position: center;
-        }
-        #todo-list{
-            .item{  
-                justify-content: left;
-                align-items: center;
-                flex-wrap: wrap;
-                width: 90%;
-               
-            }
-        }
+  @media (max-width: $screenWidth) {
+    html {
+      font-size: $font-size;
     }
+
+    #tasklist {
+      max-height: 80%;
+    }
+    #todo-header {
+      height: 2rem;
+      width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url("../images/Landscape-Color.jpg");
+      background-position: center;
+    }
+
+    #todo-list {
+      .item {
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        .btn {
+          padding: 0.5rem;
+          border-radius: 0.8rem;
+          border: none;
+          margin: 0.5rem;
+          height: 2.5rem;
+          width: 2.5em;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
 }
 
+@mixin change-items($device_size, $inline-size) {
+  @media (max-width: $device_size) {
+    .item {
+      overflow-wrap: break-word;
+      .list-item-text {
+        overflow-wrap: break-word;
+        margin-bottom: 1rem;
+        .text {
+          text-align: center;
+          inline-size: $inline-size;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}
 @include device(800px, 10px);
+@include change-items(600px, 28rem);
+@include change-items(800, 50rem);

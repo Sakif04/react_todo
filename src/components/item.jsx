@@ -26,7 +26,7 @@ const Item=({item,todos,setTodos,setInput})=>{
     }
     return(
     <li className={`item ${isComplete?"completed":""}`}>
-        <div className="list-item-text"><p>{item.text}</p></div>
+        <div className="list-item-text"><p className='text'>{item.text}</p></div>
         <div className="buttons">
             <button className={`btn btn-complete ${isComplete?"completed":""}`} onClick={toggleComplete} ><i className="fas fa-check"></i></button>
             <button className="btn btn-edit" onClick={editItem}><i className="fas fa-edit"></i></button>

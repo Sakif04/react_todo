@@ -24,6 +24,46 @@
         flex-wrap: wrap;
     width: 90%;
   }
+  #todo-list .item .btn {
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5em;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    overflow-wrap: break-word;
+  }
+  .item .list-item-text {
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+  }
+  .item .list-item-text .text {
+    text-align: center;
+    inline-size: 28rem;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 800) {
+  .item {
+    overflow-wrap: break-word;
+  }
+  .item .list-item-text {
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+  }
+  .item .list-item-text .text {
+    text-align: center;
+    inline-size: 50rem;
+    overflow-wrap: break-word;
+  }
 }
 
 * {
@@ -176,7 +216,7 @@ i {
   -ms-grid-columns: 1/2;
       grid-template-columns: 1/2;
   overflow-wrap: break-word;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .item .list-item-text p {
@@ -195,8 +235,8 @@ i {
   border-radius: 0.8rem;
   border: none;
   margin: 0.25rem;
-  height: 1.5rem;
-  width: 2.5rem;
+  height: 2.5em;
+  width: 2.5em;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
